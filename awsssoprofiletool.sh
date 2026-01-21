@@ -207,7 +207,7 @@ do
 	    defoutput=$output
 	fi
 	
-	p="$rolename-$acctnum"
+	p="$acctname-$acctnum-$rolename"
 	while true ; do
 	    if $interactive ;
 	    then
@@ -268,7 +268,6 @@ echo "Processing complete."
 echo
 echo "Added the following profiles to $profilefile:"
 echo
-
 for i in "${created_profiles[@]}"
 do
     echo "$i"
